@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import gsort from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-base-gsort/tags). For example,
+
+```javascript
 import gsort from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort@v0.1.0-deno/mod.js';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort@deno/mod.js';
 ```
 
 #### gsort( N, order, x, strideX )
@@ -143,7 +148,7 @@ gsort.ndarray( 3, 1.0, x, 1, x.length-3 );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import gsort from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort@v0.1.0-deno/mod.js';
+import gsort from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort@deno/mod.js';
 
 var x = discreteUniform( 10, -100, 100, {
     'dtype': 'generic'
